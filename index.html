@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-     <script>
+       <script>
 
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -28,15 +27,15 @@ fbq('track','PageView');
 src="https://www.facebook.com/tr?id=1403363101236829&ev=PageView&noscript=1">
 
 </noscript>
-     
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>𝗔𝗥𝗨𝗡 𝗧𝗥𝗔𝗗𝗘R | Telegram Channel</title>
 
-<meta name="description" content="Join  Channel for NIFTY, BANKNIFTY and Options market analysis.">
+<meta name="description" content="Join CA NITIN MURAR Telegram Channel for NIFTY, BANKNIFTY and Options market analysis.">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -44,13 +43,14 @@ src="https://www.facebook.com/tr?id=1403363101236829&ev=PageView&noscript=1">
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:
         radial-gradient(circle at top,#12346b 0%,#07152d 38%,#020711 100%);
     color:#fff;
     min-height:100vh;
 }
 
+/* MAIN */
 .page{
     width:100%;
     min-height:100vh;
@@ -60,10 +60,11 @@ body{
     align-items:center;
 }
 
+/* CARD */
 .card{
     width:100%;
     max-width:480px;
-    background:rgba(7,18,38,.94);
+    background:rgba(7,18,38,.95);
     border:1px solid rgba(255,255,255,.12);
     border-radius:28px;
     padding:28px 18px 22px;
@@ -109,8 +110,10 @@ body{
     border-radius:50%;
     overflow:hidden;
     background:#fff;
-    border:3px solid rgba(255,255,255,.9);
-    box-shadow:0 10px 35px rgba(0,0,0,.45);
+    border:3px solid rgba(255,255,255,.95);
+    box-shadow:
+        0 0 15px rgba(0,170,255,.4),
+        0 10px 35px rgba(0,0,0,.45);
     position:relative;
     z-index:2;
 }
@@ -182,11 +185,12 @@ h1{
     margin-top:23px;
     padding:16px 13px;
     border-radius:20px;
-    background:linear-gradient(
-        145deg,
-        rgba(22,119,255,.17),
-        rgba(0,198,255,.06)
-    );
+    background:
+        linear-gradient(
+            145deg,
+            rgba(22,119,255,.18),
+            rgba(0,198,255,.06)
+        );
     border:1px solid rgba(52,160,255,.24);
     position:relative;
     z-index:2;
@@ -201,15 +205,15 @@ h1{
 
 /* TIMER */
 .timer{
-    min-height:58px;
+    min-height:60px;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .timer-circle{
-    width:54px;
-    height:54px;
+    width:55px;
+    height:55px;
     border-radius:50%;
     border:2px solid #28a9ff;
     display:flex;
@@ -218,45 +222,175 @@ h1{
     font-size:21px;
     font-weight:900;
     color:#fff;
-    box-shadow:0 0 25px rgba(28,157,255,.3);
+    box-shadow:
+        0 0 15px rgba(28,157,255,.35),
+        0 0 30px rgba(28,157,255,.18);
 }
 
-/* BUTTON */
+/* =========================
+   HIGHLIGHT TELEGRAM BUTTON
+========================= */
+
 .telegram-btn{
     width:100%;
-    min-height:56px;
-    border-radius:15px;
+    min-height:62px;
+
     display:none;
     align-items:center;
     justify-content:center;
-    gap:9px;
+    gap:10px;
+
+    border-radius:17px;
+
     text-decoration:none;
     color:#fff;
-    font-size:15px;
+
+    font-size:16px;
     font-weight:900;
-    letter-spacing:.2px;
-    background:linear-gradient(135deg,#168cff,#0064e6);
+    letter-spacing:.3px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00aaff,
+            #0066ff,
+            #00c6ff,
+            #0066ff
+        );
+
+    background-size:300% 300%;
+
+    border:2px solid rgba(255,255,255,.45);
+
     box-shadow:
-        0 10px 25px rgba(0,104,255,.28),
-        inset 0 1px 0 rgba(255,255,255,.2);
-    transition:.2s ease;
+        0 0 10px rgba(0,170,255,.75),
+        0 0 25px rgba(0,120,255,.65),
+        0 0 45px rgba(0,120,255,.45),
+        0 12px 30px rgba(0,90,255,.30);
+
+    animation:
+        buttonPulse 1.5s infinite,
+        buttonGlow 3s ease infinite;
+
+    transition:.25s ease;
+
+    position:relative;
+    overflow:hidden;
 }
 
+/* SHINE EFFECT */
+.telegram-btn:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.45),
+            transparent
+        );
+
+    transform:skewX(-20deg);
+
+    animation:buttonShine 2.5s infinite;
+}
+
+/* HOVER */
 .telegram-btn:hover{
-    transform:translateY(-2px);
-    box-shadow:0 14px 30px rgba(0,104,255,.38);
+    transform:scale(1.04);
+
+    box-shadow:
+        0 0 15px rgba(0,200,255,.95),
+        0 0 35px rgba(0,120,255,.85),
+        0 0 70px rgba(0,120,255,.60),
+        0 15px 35px rgba(0,90,255,.40);
 }
 
+/* TELEGRAM ICON */
 .telegram-icon{
-    width:28px;
-    height:28px;
+    width:31px;
+    height:31px;
+
     border-radius:50%;
+
     background:#fff;
-    color:#168cff;
+    color:#008cff;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:15px;
+
+    font-size:17px;
+    font-weight:900;
+
+    position:relative;
+    z-index:2;
+}
+
+.telegram-btn{
+    text-shadow:
+        0 1px 2px rgba(0,0,0,.25);
+}
+
+.telegram-btn span{
+    position:relative;
+    z-index:2;
+}
+
+/* BUTTON PULSE */
+@keyframes buttonPulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.035);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* MOVING BLUE GRADIENT */
+@keyframes buttonGlow{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* SHINE */
+@keyframes buttonShine{
+
+    0%{
+        left:-120%;
+    }
+
+    45%{
+        left:130%;
+    }
+
+    100%{
+        left:130%;
+    }
+
 }
 
 /* CLAIMS */
@@ -318,11 +452,14 @@ h1{
     height:23px;
     flex-shrink:0;
     border-radius:50%;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     background:rgba(0,214,130,.12);
     border:1px solid rgba(0,214,130,.25);
+
     color:#00e890;
     font-weight:900;
 }
@@ -332,8 +469,10 @@ h1{
     margin-top:18px;
     padding:13px;
     border-radius:15px;
+
     background:rgba(255,166,0,.07);
     border:1px solid rgba(255,166,0,.18);
+
     position:relative;
     z-index:2;
 }
@@ -357,6 +496,7 @@ h1{
     color:#738197;
     font-size:9px;
     line-height:1.5;
+
     position:relative;
     z-index:2;
 }
@@ -366,6 +506,7 @@ h1{
     margin-top:18px;
     padding-top:15px;
     border-top:1px solid rgba(255,255,255,.08);
+
     position:relative;
     z-index:2;
 }
@@ -380,14 +521,17 @@ h1{
 .footer a{
     display:inline-block;
     margin-top:6px;
+
     color:#4eafff;
     text-decoration:none;
+
     font-size:11px;
     font-weight:800;
 }
 
 /* MOBILE */
 @media(max-width:360px){
+
     .card{
         padding:24px 14px 20px;
     }
@@ -401,9 +545,12 @@ h1{
     }
 
     .telegram-btn{
-        font-size:13px;
+        font-size:14px;
+        min-height:58px;
     }
+
 }
+
 </style>
 </head>
 
@@ -415,10 +562,12 @@ h1{
 
     <!-- LOGO -->
     <div class="profile-icon">
+
         <img
             src="aru.jpg"
             alt="CA NITIN MURAR Logo"
         >
+
     </div>
 
     <!-- BADGE -->
@@ -430,7 +579,7 @@ h1{
     <!-- TITLE -->
     <h1>
         𝗔𝗥𝗨𝗡 
-        <span class="name-highlight">𝗧𝗥𝗔𝗗𝗘</span>
+         <span class="name-highlight">𝗧𝗥𝗔𝗗𝗘</span>
     </h1>
 
     <div class="market-tags">
@@ -441,6 +590,7 @@ h1{
         Daily Intraday Trading Signals &amp; Analysis
     </div>
 
+
     <!-- FIRST CTA -->
     <div class="cta-box">
 
@@ -449,9 +599,11 @@ h1{
         </div>
 
         <div class="timer" id="timer1">
+
             <div class="timer-circle">
-                <span id="count1">3</span>
+                <span id="count1">1</span>
             </div>
+
         </div>
 
         <a
@@ -461,26 +613,44 @@ h1{
             target="_blank"
             rel="noopener"
         >
+
             <span class="telegram-icon">➤</span>
-            JOIN TELEGRAM CHANNEL
+
+            <span>
+                JOIN TELEGRAM CHANNEL NOW
+            </span>
+
         </a>
 
     </div>
+
 
     <!-- CLAIMS -->
     <div class="claims">
 
         <div class="claim">
+
             <strong>5,000+</strong>
-            <span>Traders Community</span>
+
+            <span>
+                Traders Community
+            </span>
+
         </div>
 
+
         <div class="claim">
+
             <strong>Daily</strong>
-            <span>Market Setups</span>
+
+            <span>
+                Market Setups
+            </span>
+
         </div>
 
     </div>
+
 
     <!-- FEATURES -->
     <div class="features">
@@ -489,27 +659,60 @@ h1{
             WHAT YOU GET
         </div>
 
-        <div class="feature">
-            <div class="check">✓</div>
-            <div>5–7 High Probability Trades</div>
-        </div>
 
         <div class="feature">
-            <div class="check">✓</div>
-            <div>Exact Entry, SL &amp; Target</div>
+
+            <div class="check">
+                ✓
+            </div>
+
+            <div>
+                5–7 High Probability Trades
+            </div>
+
         </div>
 
-        <div class="feature">
-            <div class="check">✓</div>
-            <div>Beginner Friendly Guidance</div>
-        </div>
 
         <div class="feature">
-            <div class="check">✓</div>
-            <div>Live Market Updates</div>
+
+            <div class="check">
+                ✓
+            </div>
+
+            <div>
+                Exact Entry, SL &amp; Target
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="check">
+                ✓
+            </div>
+
+            <div>
+                Beginner Friendly Guidance
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="check">
+                ✓
+            </div>
+
+            <div>
+                Live Market Updates
+            </div>
+
         </div>
 
     </div>
+
 
     <!-- SECOND CTA -->
     <div class="cta-box">
@@ -518,11 +721,15 @@ h1{
             📲 GET FREE ACCESS NOW
         </div>
 
+
         <div class="timer" id="timer2">
+
             <div class="timer-circle">
-                <span id="count2">3</span>
+                <span id="count2">1</span>
             </div>
+
         </div>
+
 
         <a
             id="button2"
@@ -531,39 +738,60 @@ h1{
             target="_blank"
             rel="noopener"
         >
-            <span class="telegram-icon">➤</span>
-            JOIN CHANNEL NOW
+
+            <span class="telegram-icon">
+                ➤
+            </span>
+
+            <span>
+                JOIN CHANNEL NOW
+            </span>
+
         </a>
 
     </div>
 
+
     <!-- URGENCY -->
     <div class="urgency">
-        <strong>⚡ Free Access Closing Soon</strong>
-        <span>Limited Seats • Active Community</span>
+
+        <strong>
+            ⚡ Free Access Closing Soon
+        </strong>
+
+        <span>
+            Limited Seats • Active Community
+        </span>
+
     </div>
+
 
     <!-- RISK -->
     <div class="risk">
+
         Market investments are subject to risk.
         Trading involves market risk. Information provided
         is for educational purposes only and should not be
         considered financial or investment advice.
+
     </div>
+
 
     <!-- FOOTER -->
     <div class="footer">
+
         <div class="footer-text">
             Powered by
         </div>
 
         <a
-            
+            href="https://t.me/+ahlminu0Ax4yYmFl"
             target="_blank"
             rel="noopener"
         >
-            SIVI AD AGENCY
+            SHIV AD AGENCY
         </a>
+
     </div>
 
 </div>
@@ -573,11 +801,17 @@ h1{
 
 <script>
 
+/* TELEGRAM CHANNEL */
 const telegramURL =
 "https://t.me/+tEqv8ba-gI8zNjU9";
 
 
-function startTimer(timerId, countId, buttonId){
+/* 1 SECOND TIMER */
+function startTimer(
+    timerId,
+    countId,
+    buttonId
+){
 
     const timer =
         document.getElementById(timerId);
@@ -588,49 +822,41 @@ function startTimer(timerId, countId, buttonId){
     const button =
         document.getElementById(buttonId);
 
-    let seconds = 3;
-
+    /* BUTTON HIDDEN */
     button.style.display = "none";
 
-    count.textContent = seconds;
+    /* SHOW 1 */
+    count.textContent = "1";
 
-    const interval =
-        setInterval(function(){
+    /*
+       1 SECOND WAIT
+       THEN SHOW BUTTON
+    */
+    setTimeout(function(){
 
-            seconds--;
+        /* HIDE TIMER */
+        timer.style.display = "none";
 
-            if(seconds > 0){
+        /* SHOW BUTTON */
+        button.style.display = "flex";
 
-                count.textContent =
-                    seconds;
+        /* TELEGRAM LINK */
+        button.href = telegramURL;
 
-            }
+    },1000);
 
-            if(seconds <= 0){
-
-                clearInterval(interval);
-
-                timer.style.display =
-                    "none";
-
-                button.style.display =
-                    "flex";
-
-                button.href =
-                    telegramURL;
-            }
-
-        },1000);
 }
 
 
-/* START BOTH TIMERS */
+/* START FIRST TIMER */
 startTimer(
     "timer1",
     "count1",
     "button1"
 );
 
+
+/* START SECOND TIMER */
 startTimer(
     "timer2",
     "count2",
